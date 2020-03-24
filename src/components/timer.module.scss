@@ -1,0 +1,27 @@
+@import "colors";
+
+.notRunning {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(50%, $secondary),
+    color-stop(50%, transparent)
+  );
+  background-image: linear-gradient(90deg, $secondary 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 200%;
+  transition: background 15000ms linear;
+}
+
+.running {
+  color: $accent;
+  border-color: $accent;
+  background-position: 0;
+  cursor: unset;
+}
+
+.running:hover {
+  box-shadow: unset;
+  text-shadow: unset;
+}

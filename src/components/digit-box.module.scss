@@ -1,0 +1,18 @@
+@import "colors";
+
+.digitBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 36px;
+  margin: 2px;
+  border-radius: 10px;
+  background-color: $primary;
+  border: 2px solid $accent;
+}
+
+.isOver {
+  transform: scale(1.5);
+  opacity: 0.5;
+}

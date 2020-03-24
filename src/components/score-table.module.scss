@@ -1,0 +1,19 @@
+@import "colors";
+
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.headers {
+  margin: 8px;
+  font-size: 18px;
+}
+
+.rows {
+  color: $accent;
+  text-transform: unset;
+  font-size: 16px;
+}

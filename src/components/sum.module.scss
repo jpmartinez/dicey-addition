@@ -1,0 +1,13 @@
+@import "colors";
+
+.formula {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    color: $primary;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 2px;
+  }
+}

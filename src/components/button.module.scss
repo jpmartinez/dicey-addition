@@ -1,0 +1,32 @@
+@import "colors";
+.button {
+  max-width: 250px;
+  min-width: 210px;
+  background-color: $primary;
+  border: 2px solid $accent;
+  color: $accent;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 16px;
+  text-align: center;
+  padding: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: unset;
+  transition: all 400ms linear;
+  box-shadow: unset;
+}
+
+.button:hover {
+  box-shadow: 0 0 10px $secondary inset;
+  text-shadow: 0 0 4px $secondary;
+}
+
+.button:disabled {
+  box-shadow: unset;
+  text-shadow: unset;
+  background-color: $gray;
+  color: $white;
+  border-color: $white;
+}
