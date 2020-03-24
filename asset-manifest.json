@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dicey-addiction/static/css/main.97d761b6.chunk.css",
+    "main.js": "/dicey-addiction/static/js/main.de35b591.chunk.js",
+    "main.js.map": "/dicey-addiction/static/js/main.de35b591.chunk.js.map",
+    "runtime-main.js": "/dicey-addiction/static/js/runtime-main.c738e06a.js",
+    "runtime-main.js.map": "/dicey-addiction/static/js/runtime-main.c738e06a.js.map",
+    "static/js/2.11f68007.chunk.js": "/dicey-addiction/static/js/2.11f68007.chunk.js",
+    "static/js/2.11f68007.chunk.js.map": "/dicey-addiction/static/js/2.11f68007.chunk.js.map",
+    "index.html": "/dicey-addiction/index.html",
+    "precache-manifest.c4137284c7217c0363a6c78a8571e5bd.js": "/dicey-addiction/precache-manifest.c4137284c7217c0363a6c78a8571e5bd.js",
+    "service-worker.js": "/dicey-addiction/service-worker.js",
+    "static/css/main.97d761b6.chunk.css.map": "/dicey-addiction/static/css/main.97d761b6.chunk.css.map",
+    "static/js/2.11f68007.chunk.js.LICENSE.txt": "/dicey-addiction/static/js/2.11f68007.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c738e06a.js",
+    "static/js/2.11f68007.chunk.js",
+    "static/css/main.97d761b6.chunk.css",
+    "static/js/main.de35b591.chunk.js"
+  ]
+}
