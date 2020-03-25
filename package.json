@@ -1,5 +1,5 @@
 {
-  "name": "dicey-addiction",
+  "name": "dicey-addition",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +18,7 @@
     "react-scripts": "3.4.0",
     "react-spring": "^8.0.27"
   },
-  "homepage": "http://jpmartinez.github.io/dicey-addiction",
+  "homepage": "http://jpmartinez.github.io/dicey-addition",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
