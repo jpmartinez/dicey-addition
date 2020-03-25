@@ -1,10 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
-import { DiceyAddictionContext } from "../App";
-import Button from "./Button";
-import { joinClassNames } from "./helpers";
+import { DiceyAddictionContext } from "../../App";
+import { COUNTDOWN_SECONDS } from "../../utils/constants";
+import { joinClassNames } from "../../utils/helpers";
+import Button from "../controls/button/Button";
 import styles from "./timer.module.scss";
-
-const COUNTDOWN_SECONDS = 15;
 
 const getText = (timeLeft, running, finished) => {
   if (!finished && !running) {

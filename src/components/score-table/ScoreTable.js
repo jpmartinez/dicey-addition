@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import { DiceyAddictionContext } from "../App";
+import { DiceyAddictionContext } from "../../App";
+import Text from "../controls/text/Text";
 import styles from "./score-table.module.scss";
-import Text from "./Text";
 
 export default function ScoreTable() {
   const [

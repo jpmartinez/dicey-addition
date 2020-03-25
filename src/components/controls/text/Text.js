@@ -1,5 +1,5 @@
 import React from "react";
-import { joinClassNames } from "./helpers";
+import { joinClassNames } from "../../../utils/helpers";
 import styles from "./text.module.scss";
 
 export default function Text({ className, children }) {

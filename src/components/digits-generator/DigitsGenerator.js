@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import { DiceyAddictionContext } from "../App";
-import Button from "./Button";
-import Digits from "./Digits";
+import { DiceyAddictionContext } from "../../App";
+import Button from "../controls/button/Button";
+import Digits from "./digits/Digits";
 
 function generateDigits() {
   return ["", "", "", ""].map(a => Math.floor(Math.random() * 10));

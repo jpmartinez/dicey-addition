@@ -1,9 +1,9 @@
 import React from "react";
 import { useDrag } from "react-dnd";
 import { animated, useSpring } from "react-spring";
-import { ItemTypes } from "./constants";
+import { ItemTypes } from "../../../../utils/constants";
+import { joinClassNames } from "../../../../utils/helpers";
 import styles from "./digit.module.scss";
-import { joinClassNames } from "./helpers";
 
 export default function Digit({ value, canDrag }) {
   const props = useSpring({

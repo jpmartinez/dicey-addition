@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { useDrop } from "react-dnd";
-import { DiceyAddictionContext } from "../App";
-import { ItemTypes } from "./constants";
+import { DiceyAddictionContext } from "../../../App";
+import { ItemTypes } from "../../../utils/constants";
+import { joinClassNames } from "../../../utils/helpers";
 import styles from "./digit-box.module.scss";
-import { joinClassNames } from "./helpers";
 
 export default function DigitBox({ id }) {
   const [{ timer, move }, dispatch] = useContext(DiceyAddictionContext);

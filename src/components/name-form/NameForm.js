@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import { DiceyAddictionContext } from "../App";
-import { useForm } from "../utils/hooks";
-import Button from "./Button";
+import { DiceyAddictionContext } from "../../App";
+import { useForm } from "../../utils/hooks";
+import Button from "../controls/button/Button";
+import Text from "../controls/text/Text";
 import styles from "./name-form.module.scss";
-import Text from "./Text";
 
 export default function NameForm() {
   // eslint-disable-next-line no-unused-vars

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { DiceyAddictionContext } from "../App";
-import Digit from "./Digit";
+import { DiceyAddictionContext } from "../../../App";
+import Digit from "./digit/Digit";
 import styles from "./digits.module.scss";
 
 export default function Digits() {

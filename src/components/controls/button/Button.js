@@ -1,6 +1,6 @@
 import React from "react";
+import { joinClassNames } from "../../../utils/helpers";
 import styles from "./button.module.scss";
-import { joinClassNames } from "./helpers";
 
 export default function Button({ className, children, ...props }) {
   return (

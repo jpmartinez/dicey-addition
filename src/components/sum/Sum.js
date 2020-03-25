@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { DiceyAddictionContext } from "../App";
-import DigitBox from "./DigitBox";
+import { DiceyAddictionContext } from "../../App";
+import DigitBox from "../controls/digit-box/DigitBox";
 import styles from "./sum.module.scss";
 
 export default function Sum() {
