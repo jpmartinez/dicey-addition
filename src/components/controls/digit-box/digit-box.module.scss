@@ -4,12 +4,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 36px;
-  width: 36px;
-  margin: 2px;
+  height: 40px;
+  width: 40px;
+  margin: 4px;
   border-radius: 10px;
-  background-color: $primary;
-  border: 2px solid $accent;
+  border: 2px solid $dark-blue;
+  color: $dark-blue;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .isOver {

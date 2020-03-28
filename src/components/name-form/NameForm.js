@@ -19,28 +19,33 @@ export default function NameForm() {
 
   return (
     <form onSubmit={onSubmit} className={styles.form}>
-      <label>
-        <Text>Jugador 1</Text>
-      </label>
-      <input
-        className={styles.input}
-        type="text"
-        name="player1"
-        onChange={onChange}
-        value={!!player1 ? player1 : ""}
-        required
-      />
-      <label>
-        <Text>Jugador 2</Text>
-      </label>
-      <input
-        className={styles.input}
-        type="text"
-        name="player2"
-        onChange={onChange}
-        value={!!player2 ? player2 : ""}
-        required
-      />
+      <div className={styles.fieldContainer}>
+        <label>
+          <Text>¿Quién va primero?</Text>
+        </label>
+        <input
+          className={styles.input}
+          type="text"
+          name="player1"
+          onChange={onChange}
+          value={!!player1 ? player1 : ""}
+          required
+        />
+      </div>
+      <div className={styles.fieldContainer}>
+        <label>
+          <Text>¿Quién va segundo?</Text>
+        </label>
+        <input
+          className={styles.input}
+          type="text"
+          name="player2"
+          onChange={onChange}
+          value={!!player2 ? player2 : ""}
+          required
+        />
+      </div>
+
       <Button type="submit">Siguiente</Button>
     </form>
   );

@@ -20,7 +20,7 @@ export default function DigitBox({ id }) {
   });
 
   return (
-    <div ref={drop} className={joinClassNames(styles.digitBox, isOver && styles.isOver)}>
+    <div ref={drop} className={joinClassNames(styles.digitBox, isOver && timer.running && styles.isOver)}>
       {!isNaN(move[id]) ? move[id] : ""}
     </div>
   );

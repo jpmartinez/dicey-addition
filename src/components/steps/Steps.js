@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { DiceyAddictionContext } from "../../App";
+import Card from "../card/Card";
 import DigitsGenerator from "../digits-generator/DigitsGenerator";
 import { End } from "../end/End";
 import NameForm from "../name-form/NameForm";
@@ -21,5 +22,9 @@ export const Steps = () => {
   const [{ step }] = useContext(DiceyAddictionContext);
   console.info(step);
   const Component = stepToComponent[step] || Empty;
-  return <Component />;
+  return (
+    <Card>
+      <Component />
+    </Card>
+  );
 };

@@ -1,25 +1,26 @@
 @import "colors";
 
 .form {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .input {
-  max-width: 250px;
-  min-width: 210px;
-  background-color: $primary;
-  border: 2px solid $accent;
-  color: $accent;
-  border-radius: 30px;
-  cursor: pointer;
-  font-size: 16px;
-  margin: 16px;
+  margin-top: 8px;
+  background-color: unset;
+  border: none;
+  border-bottom: solid 2px $primary;
+  color: $primary;
+  font-size: 14px;
+  font-weight: 600;
   text-align: center;
-  padding: 8px;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-shadow: unset;
-  transition: all 400ms linear;
-  box-shadow: unset;
+  padding: 2px;
+}
+
+.fieldContainer {
+  display: flex;
+  flex-direction: column;
 }

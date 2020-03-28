@@ -18,7 +18,7 @@ export default function Digit({ value, canDrag }) {
       isDragging: !!monitor.isDragging(),
       value
     }),
-    canDrag: () => !isNaN(value)
+    canDrag: () => canDrag && !isNaN(value)
   });
 
   return (

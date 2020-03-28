@@ -10,7 +10,8 @@ export const Player1 = () => {
   const [
     {
       move,
-      players: { player1 }
+      players: { player1 },
+      timer
     },
     dispatch
   ] = useContext(DiceyAddictionContext);
@@ -19,8 +20,10 @@ export const Player1 = () => {
     <>
       <Digits />
       <Timer />
-      <Text>{player1.name}</Text>
-      <Sum />
+      <div>
+        <Text>{player1.name}</Text>
+        <Sum />
+      </div>
       <Button onClick={() => dispatch({ type: "next", value: players, nextStep: "player2" })}>Siguiente</Button>
     </>
   );

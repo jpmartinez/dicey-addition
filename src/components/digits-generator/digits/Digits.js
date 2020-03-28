@@ -9,7 +9,7 @@ export default function Digits() {
   return (
     <div className={styles.container}>
       {digits.map((value, ix) => (
-        <Digit key={ix} value={value} />
+        <Digit key={ix} value={value} canDrag={state.timer.running} />
       ))}
     </div>
   );

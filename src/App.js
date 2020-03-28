@@ -15,13 +15,11 @@ const DiceyAddictionContextProvider = props => {
 
 function App() {
   return (
-    <div className="App">
-      <DiceyAddictionContextProvider>
-        <DndProvider backend={MultiBackend} options={HTML5toTouch}>
-          <Steps />
-        </DndProvider>
-      </DiceyAddictionContextProvider>
-    </div>
+    <DiceyAddictionContextProvider>
+      <DndProvider backend={MultiBackend} options={HTML5toTouch}>
+        <Steps />
+      </DndProvider>
+    </DiceyAddictionContextProvider>
   );
 }
 

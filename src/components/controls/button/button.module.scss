@@ -1,32 +1,24 @@
 @import "colors";
+
 .button {
-  max-width: 250px;
-  min-width: 210px;
-  background-color: $primary;
-  border: 2px solid $accent;
-  color: $accent;
-  border-radius: 30px;
-  cursor: pointer;
-  font-size: 16px;
-  margin: 16px;
-  text-align: center;
-  padding: 8px;
-  text-transform: uppercase;
+  width: 150px;
+  height: 34px;
+  font-size: 18px;
+  color: $white;
   font-weight: 700;
-  text-shadow: unset;
-  transition: all 400ms linear;
-  box-shadow: unset;
+  border-radius: 24px;
+  background-color: $dark-blue;
+  box-shadow: $dark-blue-10 2px 2px 4px;
+  border: none;
+  transition: all 400ms;
 }
 
 .button:hover {
-  box-shadow: 0 0 10px $secondary inset;
-  text-shadow: 0 0 4px $secondary;
+  box-shadow: $dark-blue-40 2px 2px 4px;
+  transform: translateY(-1px);
 }
 
-.button:disabled {
-  box-shadow: unset;
-  text-shadow: unset;
-  background-color: $gray;
-  color: $white;
-  border-color: $white;
+.button:focus {
+  box-shadow: none;
+  transform: translateY(1px);
 }
