@@ -12,7 +12,7 @@ export default function NameForm() {
   const [onSubmit, onChange, { player1, player2 }] = useForm(() =>
     dispatch({
       type: "setPlayer",
-      value: { player1: { name: player1.toUpperCase() }, player2: { name: player2.toUpperCase() } },
+      value: { player1: { name: player1 }, player2: { name: player2 } },
       nextStep: "generate"
     })
   );

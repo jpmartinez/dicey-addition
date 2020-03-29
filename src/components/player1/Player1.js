@@ -5,6 +5,7 @@ import Text from "../controls/text/Text";
 import Digits from "../digits-generator/digits/Digits";
 import Sum from "../sum/Sum";
 import Timer from "../timer/Timer";
+import styles from "./player1.module.scss";
 
 export const Player1 = () => {
   const [
@@ -19,12 +20,15 @@ export const Player1 = () => {
   return (
     <>
       <Digits />
-      <Timer />
-      <div>
+      <div className={styles.playArea}>
         <Text>{player1.name}</Text>
         <Sum />
       </div>
-      <Button onClick={() => dispatch({ type: "next", value: players, nextStep: "player2" })}>Siguiente</Button>
+      {timer.finished ? (
+        <Button onClick={() => dispatch({ type: "next", value: players, nextStep: "player2" })}>Siguiente</Button>
+      ) : (
+        <Timer />
+      )}
     </>
   );
 };

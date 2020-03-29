@@ -18,7 +18,7 @@ export function reducer(state, action) {
     case "next":
       return merge(
         state,
-        { move: initialState.move, players: action.value, step: action.nextStep },
+        { timer: { finished: false }, move: initialState.move, players: action.value, step: action.nextStep },
         { arrayMerge: overWriteMerge }
       );
     case "setMove":
@@ -28,7 +28,11 @@ export function reducer(state, action) {
     case "setTimer":
       return merge(state, { timer: action.value });
     case "calculate": {
-      state = merge(state, { move: initialState.move, players: action.value }, { arrayMerge: overWriteMerge });
+      state = merge(
+        state,
+        { timer: { finished: false }, move: initialState.move, players: action.value },
+        { arrayMerge: overWriteMerge }
+      );
       const player1Move = state.players.player1.move;
       const player2Move = state.players.player2.move;
       let sum1 = parseInt(`${player1Move[0]}${player1Move[1]}`) + parseInt(`${player1Move[2]}${player1Move[3]}`);
