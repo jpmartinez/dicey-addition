@@ -1,19 +1,45 @@
 @import "colors";
 
 .container {
-  display: grid;
   width: 100%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
 }
 
-.headers {
-  margin: 8px;
-  font-size: 18px;
+.moves {
+  display: grid;
+  grid-template-rows: auto auto;
+  width: 100%;
+  grid-gap: 12px;
+  grid-template-columns: auto 1fr auto;
+  span {
+    font-size: 14px;
+    padding: 0;
+    justify-self: start;
+  }
+  .score {
+    justify-self: end;
+  }
 }
 
-.rows {
-  color: $accent;
-  text-transform: unset;
-  font-size: 16px;
+.points {
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  justify-self: center;
+}
+
+.point {
+  margin: auto 2px;
+  border: solid 1.5px $dark-blue;
+  height: 10px;
+  width: 10px;
+  border-radius: 8px;
+  &.win {
+    background-color: $green;
+  }
+
+  &.lose {
+    opacity: 0.5;
+  }
 }

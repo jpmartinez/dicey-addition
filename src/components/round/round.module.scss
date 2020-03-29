@@ -1,0 +1,48 @@
+@import "colors";
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.moves {
+  display: grid;
+  grid-template-rows: auto auto;
+  width: 100%;
+  grid-gap: 12px;
+  grid-template-columns: auto 1fr auto;
+  span {
+    font-size: 14px;
+    padding: 0;
+    justify-self: start;
+  }
+  .move {
+    font-weight: 400;
+    justify-self: center;
+  }
+  .result {
+    justify-self: end;
+  }
+}
+
+.playerMove {
+  display: grid;
+  span {
+    font-size: 14px;
+    padding: 0;
+  }
+  :nth-child(even) {
+    font-weight: 600;
+    background-color: red;
+  }
+}
+
+.separator {
+  width: 100%;
+  border-bottom: solid 1.5px $dark-blue;
+}

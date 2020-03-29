@@ -16,7 +16,7 @@ export const Player2 = () => {
     },
     dispatch
   ] = useContext(DiceyAddictionContext);
-  const players = { player2: { ...player2, move: move.map(m => (m === "" ? undefined : m)) }, move: ["", "", "", ""] };
+  const players = { player2: { ...player2, move: move.map(m => (m === "" ? "?" : m)) }, move: ["", "", "", ""] };
   return (
     <>
       <Digits />

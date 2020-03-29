@@ -1,14 +1,16 @@
 import React, { useContext } from "react";
 import { DiceyAddictionContext } from "../../App";
-import Text from "../controls/text/Text";
+import Button from "../controls/button/Button";
+import LargeText from "../controls/large-text/LargeText";
 import ScoreTable from "../score-table/ScoreTable";
 
 export const End = () => {
-  const [{ winner }] = useContext(DiceyAddictionContext);
+  const [{ winner, round }, dispatch] = useContext(DiceyAddictionContext);
   return (
     <>
-      <Text>{`El ganador es ${winner}`}</Text>
-      <ScoreTable />
+      <ScoreTable title="Puntaje Final" />
+      <LargeText>{winner && !round.draw ? `Ganador ${winner}` : "Empate"}</LargeText>
+      <Button onClick={() => dispatch({ type: "reset" })}>¿Otra?</Button>
     </>
   );
 };
