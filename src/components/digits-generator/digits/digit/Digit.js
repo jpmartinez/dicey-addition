@@ -9,21 +9,24 @@ export default function Digit({ value, canDrag }) {
   const props = useSpring({
     from: { number: 0 },
     to: { number: isNaN(value) ? 0 : value },
-    config: { duration: 500 }
+    config: { duration: 500 },
   });
-
+  canDrag = canDrag && !isNaN(value);
   const [{ isDragging }, drag] = useDrag({
     item: { type: ItemTypes.DIGIT, value },
-    collect: monitor => ({
+    collect: (monitor) => ({
       isDragging: !!monitor.isDragging(),
-      value
+      value,
     }),
-    canDrag: () => canDrag && !isNaN(value)
+    canDrag: () => canDrag,
   });
 
   return (
-    <div className={joinClassNames(styles.digit, isDragging && styles.dragging)} ref={drag}>
-      {!isNaN(value) ? <animated.span>{props.number.interpolate(number => Math.floor(number))}</animated.span> : "?"}
+    <div
+      className={joinClassNames(styles.digit, isDragging && styles.dragging, canDrag && styles.draggable)}
+      ref={drag}
+    >
+      {!isNaN(value) ? <animated.span>{props.number.interpolate((number) => Math.floor(number))}</animated.span> : "?"}
     </div>
   );
 }
