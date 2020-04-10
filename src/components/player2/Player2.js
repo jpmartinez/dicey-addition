@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { useHistory } from 'react-router-dom';
 import { DiceyAddictionContext } from '../../App';
 import { joinClassNames } from '../../utils/helpers';
 import Button from '../controls/button/Button';
@@ -17,7 +18,11 @@ export const Player2 = () => {
 		},
 		dispatch,
 	] = useContext(DiceyAddictionContext);
-	const players = { player2: { ...player2, move: move.map(m => (m === '' ? '?' : m)) }, move: ['', '', '', ''] };
+	const players = {
+		player2: { ...player2, move: move.map(m => (m === '' ? '?' : m)) },
+		move: ['', '', '', ''],
+	};
+	const history = useHistory();
 	return (
 		<>
 			<Digits />
@@ -26,7 +31,14 @@ export const Player2 = () => {
 				<Sum />
 			</div>
 			{timer.finished ? (
-				<Button onClick={() => dispatch({ type: 'calculate', value: players })}>Siguiente</Button>
+				<Button
+					onClick={() => {
+						dispatch({ type: 'calculate', value: players });
+						history.push('score');
+					}}
+				>
+					Siguiente
+				</Button>
 			) : (
 				<Timer />
 			)}
