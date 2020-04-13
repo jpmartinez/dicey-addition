@@ -18,7 +18,7 @@ export default function NameForm() {
 	);
 
 	return (
-		<form onSubmit={onSubmit} className={styles.form}>
+		<form onSubmit={onSubmit} className={styles.form} autocomplete="off">
 			<div className={styles.fieldContainer}>
 				<label>
 					<Text>¿Quién va primero?</Text>
@@ -31,6 +31,7 @@ export default function NameForm() {
 					onBlur={onBlur}
 					value={!!player1 ? player1 : ''}
 					required
+					autocomplete="off"
 				/>
 			</div>
 			<div className={styles.fieldContainer}>
@@ -45,6 +46,7 @@ export default function NameForm() {
 					onBlur={onBlur}
 					value={!!player2 ? player2 : ''}
 					required
+					autocomplete="off"
 				/>
 			</div>
 			<Link to="generate">
