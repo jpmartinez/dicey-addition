@@ -1,6 +1,6 @@
-export const ROUNDS_TO_WIN = 10;
-export const COUNTDOWN_SECONDS = 10;
+export const ROUNDS_TO_WIN = 2;
+export const COUNTDOWN_SECONDS = 5;
 
 export const ItemTypes = {
-  DIGIT: "digit"
+	DIGIT: 'digit',
 };

@@ -16,9 +16,5 @@ export const useForm = callback => {
 		setInputs(inputs => ({ ...inputs, [event.target.name]: event.target.value }));
 	};
 
-	const onBlur = () => {
-		callback();
-	};
-
-	return [onSubmit, onChange, onBlur, inputs];
+	return [onSubmit, onChange, inputs];
 };
