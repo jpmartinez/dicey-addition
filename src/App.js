@@ -3,11 +3,12 @@ import { DndProvider } from 'react-dnd';
 import MultiBackend from 'react-dnd-multi-backend';
 import HTML5toTouch from 'react-dnd-multi-backend/dist/esm/HTML5toTouch';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import Card from './components/card/Card';
 import { End } from './features/end/End';
 import Generate from './features/generate/Generate';
+import { Home } from './features/home/Home';
 import { Player } from './features/player/Player';
 import { Round } from './features/round/Round';
 import Start from './features/start/Start';
@@ -38,7 +39,7 @@ function App() {
 								<End />
 							</Route>
 							<Route path="/">
-								<Redirect to="/start" />
+								<Home />
 							</Route>
 						</Switch>
 					</Card>
