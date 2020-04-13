@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/dicey-addition/static/css/main.501c084b.chunk.css",
-    "main.js": "/dicey-addition/static/js/main.dcc1995c.chunk.js",
-    "main.js.map": "/dicey-addition/static/js/main.dcc1995c.chunk.js.map",
+    "main.js": "/dicey-addition/static/js/main.86e0d022.chunk.js",
+    "main.js.map": "/dicey-addition/static/js/main.86e0d022.chunk.js.map",
     "runtime-main.js": "/dicey-addition/static/js/runtime-main.3b0f532b.js",
     "runtime-main.js.map": "/dicey-addition/static/js/runtime-main.3b0f532b.js.map",
     "static/js/2.987c4bb0.chunk.js": "/dicey-addition/static/js/2.987c4bb0.chunk.js",
     "static/js/2.987c4bb0.chunk.js.map": "/dicey-addition/static/js/2.987c4bb0.chunk.js.map",
     "index.html": "/dicey-addition/index.html",
-    "precache-manifest.402d8bdd884bdcac1c474d4ecec12f68.js": "/dicey-addition/precache-manifest.402d8bdd884bdcac1c474d4ecec12f68.js",
+    "precache-manifest.fe1e6098f3ae64527ab7ae0ad3e94a87.js": "/dicey-addition/precache-manifest.fe1e6098f3ae64527ab7ae0ad3e94a87.js",
     "service-worker.js": "/dicey-addition/service-worker.js",
     "static/css/main.501c084b.chunk.css.map": "/dicey-addition/static/css/main.501c084b.chunk.css.map",
     "static/js/2.987c4bb0.chunk.js.LICENSE.txt": "/dicey-addition/static/js/2.987c4bb0.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.3b0f532b.js",
     "static/js/2.987c4bb0.chunk.js",
     "static/css/main.501c084b.chunk.css",
-    "static/js/main.dcc1995c.chunk.js"
+    "static/js/main.86e0d022.chunk.js"
   ]
 }
