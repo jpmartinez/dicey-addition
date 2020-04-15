@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ae59cf7edd05fc9e18d10f3bd3e9db9c",
+    "revision": "1e32e5a4b1ef39d546a87fb6dd0af198",
     "url": "/dicey-addition/index.html"
   },
   {
-    "revision": "fa6ec2dd74616134261a",
+    "revision": "cdc70c0bb1b57abdd477",
     "url": "/dicey-addition/static/css/main.2029fc20.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dicey-addition/static/js/2.29c9bcca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fa6ec2dd74616134261a",
-    "url": "/dicey-addition/static/js/main.c7f1acfb.chunk.js"
+    "revision": "cdc70c0bb1b57abdd477",
+    "url": "/dicey-addition/static/js/main.734b444d.chunk.js"
   },
   {
     "revision": "a69a2027d10c9455700b",
