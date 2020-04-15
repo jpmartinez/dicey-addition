@@ -19,7 +19,7 @@ export const DiceyAddictionContext = React.createContext();
 function App() {
 	return (
 		<Provider store={store}>
-			<BrowserRouter>
+			<BrowserRouter basename={'/dicey-addition'}>
 				<DndProvider backend={MultiBackend} options={HTML5toTouch}>
 					<Card>
 						<Switch>

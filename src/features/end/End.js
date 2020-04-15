@@ -11,7 +11,7 @@ export const End = () => {
 		<>
 			<ScoreTable title="Puntaje Final" />
 			<LargeText>{result}</LargeText>
-			<a href="/start">
+			<a href="/dicey-addition/start">
 				<Button>¿Otra?</Button>
 			</a>
 		</>
