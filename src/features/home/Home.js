@@ -16,7 +16,7 @@ export const Home = () => {
 				<li>Cada jugador debe realizar una suma con estos dígitos</li>
 				<li>Quien genere la suma más cercana a 100 gana la ronda</li>
 				<li>Se jugaran {ROUNDS_TO_WIN} rondas</li>
-				<li>Quien gane más veces se alzará con la victoria</li>
+				<li>Quien gane más veces será el ganador</li>
 			</ul>
 			<Link to="/start">
 				<Button>Jugar</Button>
